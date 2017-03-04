@@ -1,0 +1,12 @@
+section#home
+  .row
+    .col-xs-12
+      img.ntust-logo src="../dist/images/ntust-logo.svg" alt="NTUST Logo"/
+    .col-xs-12
+      h1.title
+        | International Advanced
+        br
+        | Technology Program
+    .col-xs-12
+      a.button.explore href="#about"
+        | EXPLORE

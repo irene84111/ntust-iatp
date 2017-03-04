@@ -1,0 +1,52 @@
+a{
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  
+  &:hover,&:visited,&:link,&:active,{
+    color: white !important;
+    text-decoration: none !important;
+  }
+}
+
+section{
+  position: relative;
+}
+
+// Button
+.button{
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px 25px;
+  @include transition(all, 0.3s);
+
+  &:hover{
+    background-color: rgba(white, 0.5);
+  }
+
+  &.explore{
+    width: 80px;
+    margin-top: 40vh;
+  }
+}
+
+// Color
+$blue: #6c8fbd;
+
+$yellow: #e1b852;
+
+$pink: #de9b98;
+$pink-orange: #f5785d;
+
+$red-light: #cc4635;
+$red-dark: #9e3c2f;
+
+$brown: #BCAAA4;
+$brown-light: #5f4f47;
+$brown-alt: #4E342E;
+$brown-medium: #5D4037;
+$brown-dark: #060b0e;

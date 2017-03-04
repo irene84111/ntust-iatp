@@ -1,0 +1,21 @@
+@import "plugin/normalize";
+@import "plugin/bootstrap";
+@import "setting";
+@import "mixin";
+
+section#home{
+  height: 600px;
+  padding: 80px 0;
+
+  img.ntust-logo{
+    @include size(320px, auto);
+  }
+
+  .title{
+    font-family: DroidSerif-Bold;
+    font-size: 42px;
+    color: #FFFFFF;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+    padding: 20px;
+  }
+}
