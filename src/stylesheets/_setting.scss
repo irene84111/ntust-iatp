@@ -1,3 +1,18 @@
+// Color
+$darkblue: #37474F;
+$silver: #B0BEC5;
+$bluegray: #EDF2F6;
+
+body{
+  margin: 0;
+}
+
+p{
+  font-family: Roboto-Regular;
+  color: $darkblue;
+  line-height: 24px;
+}
+
 a{
   font-family: Roboto-Regular;
   font-size: 16px;
@@ -13,40 +28,61 @@ a{
 }
 
 section{
+  padding: 60px 0;
+}
+
+.main-white{
+  background: white url("../images/tech-background.png") no-repeat right top;
   position: relative;
+  z-index: 1000;
+}
+
+.main-blue{
+  background-color: $bluegray;
+  position: relative;
+  z-index: 1000;
+}
+
+.ntust-photo{
+  @include size(420px, 280px);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  position: absolute;
+  margin: 35px 40px 0;
+  right: 0;
+}
+
+.text-align-center{
+  text-align: center;
 }
 
 // Button
-.button{
+%button{
   color: white;
   border: 1px solid white;
   border-radius: 20px;
   padding: 10px 25px;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   @include transition(all, 0.3s);
 
   &:hover{
     background-color: rgba(white, 0.5);
   }
-
-  &.explore{
-    width: 80px;
-    margin-top: 40vh;
-  }
 }
 
-// Color
-$blue: #6c8fbd;
+%section-title{
+  font-family: DroidSerif-Bold;
+  font-size: 28px;
+  color: $darkblue;
+  margin-bottom: 60px;
 
-$yellow: #e1b852;
-
-$pink: #de9b98;
-$pink-orange: #f5785d;
-
-$red-light: #cc4635;
-$red-dark: #9e3c2f;
-
-$brown: #BCAAA4;
-$brown-light: #5f4f47;
-$brown-alt: #4E342E;
-$brown-medium: #5D4037;
-$brown-dark: #060b0e;
+  &:after{
+    content:'';
+    position: absolute;
+    @include size(40px, 1px);
+    background-color: $silver;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 80px;
+  }
+}

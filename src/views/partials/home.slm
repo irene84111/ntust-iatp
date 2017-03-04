@@ -8,5 +8,5 @@ section#home
         br
         | Technology Program
     .col-xs-12
-      a.button.explore href="#about"
+      a.explore href="#about-program"
         | EXPLORE

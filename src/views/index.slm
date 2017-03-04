@@ -14,10 +14,14 @@ html
     script(src='scripts/main.js', type='text/javascript')
     
   body
-    .main
+    .container
+      == partial('partials/home')
+    .main-white
       .container
-        == partial('partials/home')
         == partial('partials/about')
+    .main-blue
+      .container
+        == partial('partials/why')
 
     javascript:
       $.backstretch("../dist/images/hero-image.jpg");

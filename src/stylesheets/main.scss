@@ -5,10 +5,10 @@
 
 section#home{
   height: 600px;
-  padding: 80px 0;
 
   img.ntust-logo{
     @include size(320px, auto);
+    position: fixed;
   }
 
   .title{
@@ -16,6 +16,36 @@ section#home{
     font-size: 42px;
     color: #FFFFFF;
     text-shadow: 0 2px 4px rgba(0,0,0,0.50);
-    padding: 20px;
+    position: fixed;
+    margin: 90px 20px;
+  }
+
+  .explore{
+    @extend %button;
+    width: 80px;
+    position: fixed;
+    margin-top: 550px;
+    left: 50%;
+  }
+}
+
+section#about-program{
+  .section-title{
+    @extend %section-title;
+
+    &:after{
+      left: 50%;
+    }
+  }
+}
+
+section#why-program{
+  background-color: $bluegray;
+  .section-title{
+    @extend %section-title;
+    
+    &:after{
+      left: 40px;
+    }
   }
 }
