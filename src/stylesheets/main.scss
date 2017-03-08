@@ -3,49 +3,166 @@
 @import "setting";
 @import "mixin";
 
-section#home{
-  height: 600px;
+#home{
+  height: 100vh;
+  padding: 40px 0;
 
   img.ntust-logo{
-    @include size(320px, auto);
+    @include size(280px, auto);
     position: fixed;
   }
 
   .title{
     font-family: DroidSerif-Bold;
-    font-size: 42px;
+    font-size: 32px;
     color: #FFFFFF;
     text-shadow: 0 2px 4px rgba(0,0,0,0.50);
     position: fixed;
-    margin: 90px 20px;
+    margin: 60px 20px;
   }
 
   .explore{
-    @extend %button;
-    width: 80px;
+    @extend .button;
+    -webkit-transform: tran slate(-50%, 0);
+    transform: translate(-50%, 0);
+    width: 115px;
     position: fixed;
-    margin-top: 550px;
+    margin-top: 80vh;
     left: 50%;
+  }
+
+  @media (min-width: $screen-sm) {
+    padding: 60px 0;
+
+    img.ntust-logo{
+      @include size(320px, auto);
+      position: fixed;
+    }
+    .title{
+      font-size: 42px;
+      margin: 80px 20px;
+    }
   }
 }
 
 section#about-program{
   .section-title{
     @extend %section-title;
-
     &:after{
       left: 50%;
+    }
+  }
+
+  .intro{
+    @media (min-width: $screen-sm) {
+      text-align: center;
     }
   }
 }
 
 section#why-program{
-  background-color: $bluegray;
+
   .section-title{
     @extend %section-title;
-    
     &:after{
       left: 40px;
+    }
+
+    @media (max-width: $screen-md) {
+      text-align: center;
+      &:after{
+        left: 50%;
+      }
+    }
+  }
+
+  .curriculum{
+    @extend .info-card;
+    background: #74A951;
+    margin-top: 20px;
+    
+    > img{
+      @include size(260px, 180px);
+    }
+
+    > p{
+      font-family: DroidSerif;
+      font-size: 24px;
+      color: white;
+      text-align: center;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-top: -100px;
+    }
+  }
+}
+
+section#applicant{
+  .section-title{
+    @extend %section-title;
+    &:after{
+      left: 40px;
+    }
+
+    @media (max-width: $screen-md) {
+      text-align: center;
+      &:after{
+        left: 50%;
+      }
+    }
+  }
+
+  .applicant-info{
+    @media (min-width: $screen-md) {
+      margin-top: 120px;
+    }
+  }
+
+  .brochure{
+    @extend .info-card;
+    background: #009F90;
+    margin-top: 20px;
+    
+    > img{
+      @include size(260px, 180px);
+    }
+
+    > p{
+      font-family: DroidSerif;
+      font-size: 24px;
+      color: white;
+      text-align: center;
+    }
+    
+    @media (min-width: $screen-md) {
+      margin-top: -325px;
+    }
+  }
+
+  .label{
+    background: $bluegray;
+    padding-left: 10px;
+    margin: 20px 0;
+
+    &:first-of-type{
+      @media (min-width: $screen-sm) {
+        margin-top: 40px;
+      }
+    }
+
+    > p{
+      font-family: DroidSerif-Bold;
+      font-size: 14px;
+      line-height: 2.5;
+    }
+
+    @media (min-width: $screen-sm) {
+      padding-left: 20px;
+
+      > p{
+        font-size: 16px;
+      }
     }
   }
 }

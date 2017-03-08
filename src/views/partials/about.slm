@@ -1,13 +1,13 @@
 section#about-program
-  .row
+  .row.main.is_top
     .col-xs-12
       h2.section-title.text-align-center About Program
-    .col-md-8.col-md-offset-2
-      p.text-align-center Taiwan Tech International Advanced Technology Program is a four-year course program for international undergraduate students and all the courses within this program are taught in English. Students who finish all the required course work will receive Bachelor of Science degree (B.S) from the engineering college of Taiwan Tech.
-    .col-md-6
-      img.ntust-photo src="../dist/images/meeting.JPG" alt="NTUST Meeting"/
-    .col-md-4
-      p 
+    .col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+      p.intro Taiwan Tech International Advanced Technology Program is a four-year course program for international undergraduate students and all the courses within this program are taught in English. Students who finish all the required course work will receive Bachelor of Science degree (B.S) from the engineering college of Taiwan Tech.
+    .col-xs-12.col-sm-6.col-sm-offset-3.col-md-4.col-md-offset-2
+      img.img-responsive.ntust-photo src="../images/meeting.JPG" alt="NTUST Meeting"/
+    .col-xs-12.col-sm-10.col-sm-offset-1.col-md-4.col-md-offset-0
+      p.info
         | This program can be generally categorized into two tracks, including 
         b “Advanced Structure & Smart Control” 
         | and

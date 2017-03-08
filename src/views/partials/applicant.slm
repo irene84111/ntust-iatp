@@ -1,0 +1,18 @@
+section#applicant
+  .row.main
+    .col-xs-12.col-md-5.col-md-push-5
+      h2.section-title Applicant Qualification
+    .col-xs-12.col-sm-8.col-sm-offset-2.col-md-5.col-md-offset-0
+      .applicant-info
+        p You have completed 12-year education curriculum outside or inside Taiwan by September 20, 2017.
+        .label
+          p 
+            b Number of Students to be admitted : 60
+        .label
+          p 
+            b Tuition: around 4000 USD/academic year
+    .col-xs-12.col-md-3.col-md-push-2
+      .info-card.brochure
+        img src="../images/ntust-ib.jpg" alt="NTUST Classroom"/
+        p Brochure
+        a.button.view (href="../document/Brochure.pdf" target="_blank") VIEW
