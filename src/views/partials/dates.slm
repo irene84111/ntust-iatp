@@ -1,0 +1,11 @@
+section#dates
+  .row.main
+    .col-xs-12.col-md-8.col-md-offset-2
+      h2.section-title Important Dates
+    .col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+      ul
+        li Application Opens: 15/March/2017
+        li Application Deadline: 30/April/2017
+        li Notification: 24/May/2017
+        li Intention Reply for Enrollment: 9/June/2017
+        li Semester Begins: Sep/2017

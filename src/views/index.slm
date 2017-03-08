@@ -15,9 +15,17 @@ html
   body
     .container-fluid
       == partial('partials/home')
-      == partial('partials/about')
-      == partial('partials/why')
-      == partial('partials/applicant')
+      .about
+        == partial('partials/about')
+        == partial('partials/why')
+        == partial('partials/applicant')
+      == partial('partials/banner')
+      .apply
+        == partial('partials/apply')
+        == partial('partials/documents')
+        == partial('partials/dates')
+        == partial('partials/scholarship')
+      == partial('partials/footer')
 
     javascript:
       $.backstretch("../images/hero-image.jpg");

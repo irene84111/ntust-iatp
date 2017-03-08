@@ -1,0 +1,11 @@
+section#documents
+  .row.main.is_blue
+    .col-xs-12.col-md-8.col-md-offset-2
+      h2.section-title Documents for application
+    .col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+      ol
+        li One ORIGINAL diploma (Applicants graduating in the current semester may not have to submit the diploma. However, they shall submit the certificate of study).
+        li One ORIGINAL transcript of academic records in English (including Ranking in class/school).
+        li Language Proficiency Test Certificate, like TOFEL, TOEIC, or IELTS.
+        li One Recommendation Letter
+        li Application Form (Download)

@@ -1,0 +1,4 @@
+#footer
+  .row.main.is_dark
+    .col-xs-8.col-xs-offset-2.col-sm-4.col-sm-offset-4.col-md-2.col-md-offset-5
+      img.img-responsive.ntust-logo src="../images/ntust-logo.svg" alt="NTUST Logo"/

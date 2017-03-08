@@ -1,0 +1,14 @@
+section#apply
+  .row.main.is_top
+    .col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+      p.intro The application package include two parts,the first part is paper application package and it has to be sent to:
+      .label
+        p 
+          | Committee of Taiwan Tech International Advanced Technology Program
+          br
+          | College of Engineering, National Taiwan University of Science and Technology
+          br
+          | No.43, Keelung Rd., Sec.4, Da'an Dist., Taipei 10607, Taiwan (R.O.C.)
+      p.intro And the second part is electronic application package and it has to be sent to:
+      .label
+        p sophiakuo@mail.ntust.edu.tw
